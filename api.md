@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [aldeed:autoform Public API](#aldeedautoform-public-api)
+- [excelnet:autoform Public API](#excelnetautoform-public-api)
   - [<a name="AutoForm.Utility"></a>*AutoForm*.Utility {any}&nbsp;&nbsp;<sub><i>Client</i></sub>](#a-nameautoformutilityaautoformutility-anynbspnbspsubiclientisub)
   - [<a name="AutoForm.addHooks"></a>*AutoForm*.addHooks(formIds, hooks)&nbsp;&nbsp;<sub><i>Client</i></sub>](#a-nameautoformaddhooksaautoformaddhooksformids-hooksnbspnbspsubiclientisub)
   - [<a name="AutoForm.hooks"></a>*AutoForm*.hooks(hooks)&nbsp;&nbsp;<sub><i>Client</i></sub>](#a-nameautoformhooksaautoformhookshooksnbspnbspsubiclientisub)
@@ -47,7 +47,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## aldeed:autoform Public API ##
+## excelnet:autoform Public API ##
 
 Easily create forms with automatic insert and update, and automatic reactive validation.
 

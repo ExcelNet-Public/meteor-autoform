@@ -1,15 +1,13 @@
-[![Build Status](https://travis-ci.org/aldeed/meteor-autoform.svg)](https://travis-ci.org/aldeed/meteor-autoform) [![Backers on Open Collective](https://opencollective.com/autoform/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/autoform/sponsors/badge.svg)](#sponsors)
-
 AutoForm
 =========================
 
-AutoForm is a Meteor package that adds UI components and helpers to easily create basic forms with automatic insert and update events, and automatic reactive validation. Versions 6+ of this package require that you separately install the [simpl-schema](https://github.com/aldeed/node-simple-schema) NPM package. Prior versions require and automatically install the [simple-schema](https://github.com/aldeed/meteor-simple-schema) Meteor package. You can optionally use it with the [collection2](https://github.com/aldeed/meteor-collection2) package, which you have to add to your app yourself.
+AutoForm is a Meteor package that adds UI components and helpers to easily create basic forms with automatic insert and update events, and automatic reactive validation. Versions 6+ of this package require that you separately install the [@excelnetinc/simpl-schema](https://github.com/ExcelNet-Public/simple-schema-js) NPM package. You can optionally use it with the [collection2](https://github.com/ExcelNet-Public/meteor-collection2) package, which you have to add to your app yourself.
 
 ## NOTE: AutoForm 6.0
 
 AutoForm 6.0 is now available and requires switching your app to using the SimpleSchema package from NPM. Be sure to check out the [change log](https://github.com/aldeed/meteor-autoform/blob/devel/CHANGELOG.md#600) for full details. Note that if you use add-on packages that haven't been updated yet, you will not yet be able to update to version 6.
 
-**Add-on Package Authors**: Please test your package against AutoForm 6.0, and then release a major version update in which you change your `api.use` to `api.use('aldeed:autoform@6.0.0');`. I do NOT recommend using something like `api.use('aldeed:autoform@4.0.0 || 5.0.0 || 6.0.0');` to try to support multiple major versions of AutoForm because there is currently a known Meteor issue where trying to support too many dependency paths leads to running out of memory when trying to resolve dependencies.
+**Add-on Package Authors**: Please test your package against AutoForm 6.0, and then release a major version update in which you change your `api.use` to `api.use('excelnet:autoform@6.0.0');`. I do NOT recommend using something like `api.use('excelnet:autoform@4.0.0 || 5.0.0 || 6.0.0');` to try to support multiple major versions of AutoForm because there is currently a known Meteor issue where trying to support too many dependency paths leads to running out of memory when trying to resolve dependencies.
 
 ## Table of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -104,19 +102,19 @@ AutoForm 6.0 is now available and requires switching your app to using the Simpl
 In a Meteor app directory, enter:
 
 ```
-$ meteor add aldeed:autoform
+$ meteor add excelnet:autoform
 ```
 
 Also install SimpleSchema NPM package separately (AutoForm 6+):
 
 ```
-$ npm i --save simpl-schema
+$ npm i --save @excelnetinc/simpl-schema
 ```
 
 And then also extend SimpleSchema to allow the `autoform` option in your schemas, if you plan to use it:
 
 ```
-import SimpleSchema from 'simpl-schema';
+import SimpleSchema from '@excelnetinc/simpl-schema';
 SimpleSchema.extendOptions(['autoform']);
 ```
 
@@ -234,7 +232,7 @@ Other:
 
 Let's say you have the following Mongo.Collection instance, with schema support
 provided by the collection2 package. (Adding `autoform` to your app does not add
-`collection2` by default so you need to run `meteor add aldeed:collection2@3.0.0` for this example
+`collection2` by default so you need to run `meteor add excelnet:collection2@3.0.2` for this example
 to work.)
 
 ```js
@@ -567,7 +565,7 @@ Accepts and requires just one attribute, `name`, which is the name of the schema
 Outputs the user-friendly invalid reason message for the specified property, or
 an empty string if the property is valid. This value updates reactively whenever
 validation is performed. Refer to
-[the SimpleSchema documentation](https://github.com/aldeed/meteor-simple-schema#customizing-validation-messages)
+[the SimpleSchema documentation](https://github.com/ExcelNet-Public/simple-schema-js#customizing-validation-messages)
 for information on customizing the messages.
 
 ### afFieldIsInvalid
@@ -829,7 +827,7 @@ All inputs will be read-only. Nothing happens when submitting.
 
 ## Public API
 
-For the full public API available on the `AutoForm` object, refer to the [API documentation](https://github.com/aldeed/meteor-autoform/blob/master/api.md).
+For the full public API available on the `AutoForm` object, refer to the [API documentation](https://github.com/ExcelNet-Public/meteor-autoform/blob/master/api.md).
 
 ## Non-Collection Forms
 

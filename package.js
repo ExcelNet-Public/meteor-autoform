@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'aldeed:autoform',
+  name: 'excelnet:autoform',
   summary: 'Easily create forms with automatic insert and update, and automatic reactive validation.',
-  git: 'https://github.com/aldeed/meteor-autoform.git',
-  version: '6.3.0'
+  git: 'https://github.com/ExcelNet-Public/meteor-autoform.git',
+  version: '6.3.1'
 });
 
 Package.onUse(function(api) {
@@ -27,8 +27,7 @@ Package.onUse(function(api) {
 
   api.use([
     'mrt:moment-timezone@0.2.1',
-    'aldeed:collection2-core@2.0.0',
-    'aldeed:collection2@3.0.0',
+    'excelnet:collection2@3.0.2',
     'aldeed:moment-timezone@0.4.0',
     'reload',
   ], 'client', { weak: true });
@@ -235,7 +234,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function (api) {
-  api.use(['aldeed:autoform', 'tinytest', 'underscore', 'mongo']);
+  api.use(['excelnet:autoform', 'tinytest', 'underscore', 'mongo']);
   api.use('momentjs:moment', 'client');
   api.addFiles(['tests/utility-tests.js', 'tests/autoform-tests.js']);
 });

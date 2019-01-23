@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [6.3.1](#631)
 - [6.3.0](#630)
 - [6.2.0](#620)
 - [6.1.0](#610)
@@ -108,6 +109,11 @@
 - [0.2.0](#020)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+### 6.3.1
+
+* Forked from aldeed:autoform package as not being maintained
+* Removed dependency on aldeed:collection2-core and moved other dependencies to excelnet versions
 
 ### 6.3.0
 
